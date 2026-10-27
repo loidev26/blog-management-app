@@ -16,11 +16,17 @@ mongoose.connection.once("open", () => {
   console.log("Database:", mongoose.connection.name);
 });
 
-const corsOption = {
-  origin: ["http://localhost:8000", "http://localhost:5173"],
+const corsOptions = {
+  origin: [
+    "http://localhost:8000",
+    "http://localhost:5173",
+    "https://client-two-orcin-61.vercel.app"
+  ],
   credentials: true,
   optionsSuccessStatus: 200
 };
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(cors(corsOption));
