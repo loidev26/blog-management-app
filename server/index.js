@@ -29,7 +29,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use(express.json());
-app.use(cors(corsOption));
 
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
