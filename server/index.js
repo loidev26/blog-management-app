@@ -20,7 +20,8 @@ const corsOptions = {
   origin: [
     "http://localhost:8000",
     "http://localhost:5173",
-    "https://client-two-orcin-61.vercel.app"
+    "https://client-two-orcin-61.vercel.app",
+    "https://client-git-main-loisaamper07-4886.vercel.app"
   ],
   credentials: true,
   optionsSuccessStatus: 200
